@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Digital Setter | Frequently Asked Questions</title>
+    <meta name="description" content="Get answers to common questions about Digital Setter's services, processes, pricing, and support. Find information about web development, design, marketing, and IT services." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdigitalse3389back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+        <nav class="container-max mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L16 2z"/>
+                            <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-bold text-primary">Digital Setter</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary transition-smooth">Services</a>
+                    <a href="portfolio.html" class="text-text-secondary hover:text-primary transition-smooth">Portfolio</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-smooth">About</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-smooth">Contact</a>
+                    <a href="faq.html" class="text-primary font-semibold">FAQ</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-border">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="services.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Services</a>
+                    <a href="portfolio.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Portfolio</a>
+                    <a href="about.html" class="block px-3 py-2 text-text-secondary hover:text-primary">About</a>
+                    <a href="contact.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                    <a href="faq.html" class="block px-3 py-2 text-primary font-semibold">FAQ</a>
+                    <a href="contact.html" class="block mx-3 my-2 btn-primary text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+
+        <div class="container-max mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-6">
+                    <span class="text-gradient">Frequently Asked</span><br />
+                    <span class="text-text-primary">Questions</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-text-secondary mb-8 leading-relaxed">
+                    Get instant answers to common questions about our services, processes, and partnerships. Can't find what you're looking for? We're here to help.
+                </p>
+
+                <!-- Search Bar -->
+                <div class="relative max-w-2xl mx-auto mb-8">
+                    <div class="relative">
+                        <input type="text" id="faq-search" placeholder="Search frequently asked questions..." class="input-field pl-12 pr-4 py-4 text-lg" />
+                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                        <button class="filter-btn active" data-category="all">All Questions</button>
+                        <button class="filter-btn" data-category="services">Services</button>
+                        <button class="filter-btn" data-category="pricing">Pricing</button>
+                        <button class="filter-btn" data-category="process">Process</button>
+                        <button class="filter-btn" data-category="support">Support</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="section-padding bg-white">
+        <div class="container-max mx-auto">
+            <div class="max-w-4xl mx-auto">
+                <!-- Services Category -->
+                <div class="faq-category mb-12" data-category="services">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-text-primary">Services & Capabilities</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- FAQ Item -->
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="services website development web design">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">What services does Digital Setter offer?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Digital Setter provides comprehensive digital solutions including:
+                                </p>
+                                <ul class="list-disc list-inside text-text-secondary space-y-2 mb-4">
+                                    <li><strong>Website Development:</strong> Custom websites, web applications, and e-commerce platforms</li>
+                                    <li><strong>Graphics Design:</strong> Brand identity, marketing materials, and visual content</li>
+                                    <li><strong>Digital Marketing:</strong> SEO, SEM, social media marketing, and analytics</li>
+                                    <li><strong>Video Editing:</strong> Professional video production and post-production services</li>
+                                    <li><strong>Office Management Tools:</strong> Custom business automation and workflow solutions</li>
+                                    <li><strong>IT Services:</strong> Technical support, system administration, and infrastructure management</li>
+                                </ul>
+                                <p class="text-text-secondary">
+                                    Our integrated approach ensures all services work together seamlessly to maximize your digital impact.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="difference unique competitive advantage">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">What makes Digital Setter different from other agencies?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Digital Setter stands apart through our strategic digital architecture approach. We don't just build websites or run campaigns—we engineer comprehensive digital ecosystems that integrate seamlessly with your business goals.
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Partnership-First Approach</h4>
+                                        <p class="text-sm text-text-secondary">94% client retention rate demonstrates our commitment to long-term relationships</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Measurable Results</h4>
+                                        <p class="text-sm text-text-secondary">Average 285% ROI delivery with clear KPIs and regular reporting</p>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    Our 8+ years of experience and future-proof technology approach ensure your digital investments continue delivering value for years to come.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="integration services work together combined">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">How do your different services integrate with each other?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Our services are designed to work synergistically as part of a comprehensive digital ecosystem:
+                                </p>
+                                <div class="space-y-3 mb-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <p class="text-text-secondary"><strong>Website + Marketing:</strong> Custom websites are built with SEO optimization and marketing integration from day one</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <p class="text-text-secondary"><strong>Design + Development:</strong> Visual branding seamlessly flows into website design and user experience</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <p class="text-text-secondary"><strong>Video + Marketing:</strong> Professional video content integrates with social media and website marketing campaigns</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <p class="text-text-secondary"><strong>IT + Management:</strong> Technical infrastructure supports business automation and workflow optimization</p>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    This integrated approach maximizes efficiency, reduces costs, and ensures consistent brand experience across all digital touchpoints.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Category -->
+                <div class="faq-category mb-12" data-category="pricing">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-text-primary">Pricing & Investment</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="pricing cost how much website development">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">How much do your services cost?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Our pricing is tailored to each project's specific requirements, but here are our starting ranges:
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Website Development</h4>
+                                        <p class="text-primary font-bold mb-1">Starting from $2,500</p>
+                                        <p class="text-sm text-text-secondary">Custom websites with responsive design, SEO optimization, and performance focus</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Graphics Design</h4>
+                                        <p class="text-primary font-bold mb-1">Starting from $800</p>
+                                        <p class="text-sm text-text-secondary">Brand identity, print & digital design, logo creation</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Digital Marketing</h4>
+                                        <p class="text-primary font-bold mb-1">Starting from $1,200/mo</p>
+                                        <p class="text-sm text-text-secondary">SEO, SEM, social media management, analytics</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">IT Services</h4>
+                                        <p class="text-primary font-bold mb-1">Starting from $150/hr</p>
+                                        <p class="text-sm text-text-secondary">Technical support, system administration, consulting</p>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    We provide detailed quotes after understanding your specific needs. <a href="contact.html" class="text-primary hover:underline">Contact us</a> for a personalized consultation and accurate pricing.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="payment terms schedule deposit installments">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">What are your payment terms and schedule?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    We offer flexible payment structures designed to align with project milestones:
+                                </p>
+                                <div class="space-y-4 mb-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Standard Project Payment</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• 50% deposit to begin project</li>
+                                            <li>• 25% at project midpoint/milestone</li>
+                                            <li>• 25% upon completion and delivery</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Ongoing Services</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Monthly billing for marketing services</li>
+                                            <li>• Quarterly payments for maintenance packages</li>
+                                            <li>• Hourly billing for IT support services</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    We accept major credit cards, bank transfers, and can accommodate custom payment schedules for larger projects. All payments are secured and processed through encrypted channels.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="roi return investment value worth cost benefit">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">What kind of ROI can I expect from your services?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Our clients typically see significant returns on their digital investments:
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                    <div class="text-center bg-white p-4 rounded-lg border border-border-light">
+                                        <div class="text-2xl font-bold text-primary mb-2">285%</div>
+                                        <div class="text-sm text-text-secondary">Average ROI Delivered</div>
+                                    </div>
+                                    <div class="text-center bg-white p-4 rounded-lg border border-border-light">
+                                        <div class="text-2xl font-bold text-primary mb-2">340%</div>
+                                        <div class="text-sm text-text-secondary">Conversion Increase</div>
+                                    </div>
+                                    <div class="text-center bg-white p-4 rounded-lg border border-border-light">
+                                        <div class="text-2xl font-bold text-primary mb-2">94%</div>
+                                        <div class="text-sm text-text-secondary">Client Retention Rate</div>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary mb-4">
+                                    ROI varies by service and industry, but common results include:
+                                </p>
+                                <ul class="list-disc list-inside text-text-secondary space-y-1 mb-4">
+                                    <li>Increased website traffic and lead generation</li>
+                                    <li>Higher conversion rates and sales</li>
+                                    <li>Improved operational efficiency through automation</li>
+                                    <li>Enhanced brand recognition and market positioning</li>
+                                    <li>Reduced long-term technology and marketing costs</li>
+                                </ul>
+                                <p class="text-text-secondary">
+                                    We provide detailed ROI projections during consultation and track performance metrics throughout our partnership to ensure continued value delivery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process Category -->
+                <div class="faq-category mb-12" data-category="process">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-text-primary">Process & Timeline</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="process workflow how work steps methodology">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">What is your project workflow and process?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Our proven 6-phase process ensures successful project delivery:
+                                </p>
+                                <div class="space-y-4 mb-4">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">Discovery & Strategy</h4>
+                                            <p class="text-text-secondary text-sm">Deep dive into your business goals, target audience, and competitive landscape</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">Planning & Architecture</h4>
+                                            <p class="text-text-secondary text-sm">Detailed project roadmap, technical specifications, and timeline development</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">Design & Development</h4>
+                                            <p class="text-text-secondary text-sm">Creative design and technical implementation with regular progress updates</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">Testing & Optimization</h4>
+                                            <p class="text-text-secondary text-sm">Comprehensive quality assurance and performance optimization</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">5</div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">Launch & Deployment</h4>
+                                            <p class="text-text-secondary text-sm">Smooth go-live process with monitoring and immediate support</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">6</div>
+                                        <div>
+                                            <h4 class="font-semibold text-text-primary mb-1">Support & Growth</h4>
+                                            <p class="text-text-secondary text-sm">Ongoing maintenance, optimization, and strategic growth planning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    Throughout each phase, you'll have dedicated project management, regular communication, and transparent progress tracking.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="timeline how long duration time project completion">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">How long do projects typically take to complete?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Project timelines vary based on scope and complexity, but here are typical ranges:
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Website Development</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Simple websites: 2-4 weeks</li>
+                                            <li>• Business websites: 4-8 weeks</li>
+                                            <li>• E-commerce platforms: 8-12 weeks</li>
+                                            <li>• Complex web applications: 12-20 weeks</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Graphics Design</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Logo design: 1-2 weeks</li>
+                                            <li>• Brand identity: 2-4 weeks</li>
+                                            <li>• Marketing materials: 1-3 weeks</li>
+                                            <li>• Complete rebrand: 4-8 weeks</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Digital Marketing</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Campaign setup: 1-2 weeks</li>
+                                            <li>• SEO optimization: 2-4 weeks initial</li>
+                                            <li>• Results visible: 4-12 weeks</li>
+                                            <li>• Full optimization: 6+ months</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Video Production</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Simple edits: 3-5 days</li>
+                                            <li>• Marketing videos: 1-2 weeks</li>
+                                            <li>• Complex productions: 2-4 weeks</li>
+                                            <li>• Series/campaigns: 4-8 weeks</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    We provide detailed timelines during project planning and keep you updated on progress throughout. Rush delivery options are available for urgent projects.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="revisions changes modifications feedback iterations">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">How many revisions are included in projects?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Our revision policy is designed to ensure your complete satisfaction while maintaining project efficiency:
+                                </p>
+                                <div class="space-y-4 mb-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Standard Revision Allowances</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• <strong>Design Projects:</strong> 3 rounds of revisions included</li>
+                                            <li>• <strong>Website Development:</strong> 2 rounds of major revisions</li>
+                                            <li>• <strong>Marketing Materials:</strong> 2-3 rounds depending on complexity</li>
+                                            <li>• <strong>Video Projects:</strong> 2 rounds of editing revisions</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Revision Process</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Consolidated feedback preferred for efficiency</li>
+                                            <li>• 48-72 hour turnaround for revision implementation</li>
+                                            <li>• Clear documentation of all requested changes</li>
+                                            <li>• Additional revisions available at hourly rates</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    We encourage detailed feedback during initial review phases to minimize the need for extensive revisions. Our goal is to get it right efficiently while ensuring your vision is perfectly realized.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Category -->
+                <div class="faq-category mb-12" data-category="support">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-text-primary">Support & Maintenance</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="support maintenance ongoing help assistance">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">What kind of ongoing support do you provide?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Digital Setter provides comprehensive post-launch support to ensure your continued success:
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Technical Support</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• 2.4 hour average response time</li>
+                                            <li>• Bug fixes and technical issues</li>
+                                            <li>• Security updates and patches</li>
+                                            <li>• Performance monitoring</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Maintenance Services</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Regular backups and updates</li>
+                                            <li>• Content management assistance</li>
+                                            <li>• Analytics and reporting</li>
+                                            <li>• Strategic optimization recommendations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bg-primary-50 p-4 rounded-lg border border-primary-200 mb-4">
+                                    <h4 class="font-semibold text-primary mb-2">Support Packages Available</h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+                                        <div>
+                                            <strong class="text-text-primary">Basic:</strong>
+                                            <p class="text-text-secondary">Essential maintenance and security</p>
+                                        </div>
+                                        <div>
+                                            <strong class="text-text-primary">Professional:</strong>
+                                            <p class="text-text-secondary">Full support with optimization</p>
+                                        </div>
+                                        <div>
+                                            <strong class="text-text-primary">Enterprise:</strong>
+                                            <p class="text-text-secondary">Priority support with strategic consulting</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    All clients receive 30 days of complimentary support after project completion. Extended support packages ensure your digital assets continue performing optimally.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="security data protection privacy confidentiality">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">How do you handle data security and privacy?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Data security and client privacy are fundamental to our operations:
+                                </p>
+                                <div class="space-y-4 mb-4">
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Security Measures</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• SSL encryption for all data transmission</li>
+                                            <li>• Secure development practices and code reviews</li>
+                                            <li>• Regular security audits and vulnerability assessments</li>
+                                            <li>• Encrypted backups and secure storage protocols</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Privacy Protection</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Strict confidentiality agreements with all team members</li>
+                                            <li>• GDPR and privacy regulation compliance</li>
+                                            <li>• Limited access protocols for client information</li>
+                                            <li>• Secure project management and communication tools</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg border border-border-light">
+                                        <h4 class="font-semibold text-text-primary mb-2">Project Ownership</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Full ownership rights transferred upon project completion</li>
+                                            <li>• Source code and design files provided to clients</li>
+                                            <li>• No vendor lock-in policies</li>
+                                            <li>• Clear intellectual property agreements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    We maintain comprehensive insurance coverage and follow industry best practices to protect both your data and your business interests throughout our partnership.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item bg-surface rounded-lg border border-border" data-keywords="emergency urgent support critical issues downtime">
+                            <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-primary-50 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-200 rounded-lg" onclick="toggleFAQ(this)">
+                                <span class="text-lg font-semibold text-text-primary">Do you provide emergency or urgent support?</span>
+                                <svg class="w-5 h-5 text-primary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div class="faq-answer hidden px-6 pb-6">
+                                <p class="text-text-secondary leading-relaxed mb-4">
+                                    Yes, we understand that digital emergencies can impact your business operations:
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                    <div class="bg-error-50 p-4 rounded-lg border border-error-200">
+                                        <h4 class="font-semibold text-error mb-2">Critical Issues (Immediate Response)</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Website completely down</li>
+                                            <li>• Security breaches or attacks</li>
+                                            <li>• E-commerce payment failures</li>
+                                            <li>• Data loss or corruption</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-warning-50 p-4 rounded-lg border border-warning-200">
+                                        <h4 class="font-semibold text-warning mb-2">Urgent Issues (Same Day)</h4>
+                                        <ul class="text-sm text-text-secondary space-y-1">
+                                            <li>• Significant functionality problems</li>
+                                            <li>• Marketing campaign issues</li>
+                                            <li>• Performance degradation</li>
+                                            <li>• Integration failures</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bg-primary-50 p-4 rounded-lg border border-primary-200 mb-4">
+                                    <h4 class="font-semibold text-primary mb-2">Emergency Support Process</h4>
+                                    <div class="text-sm text-text-secondary space-y-2">
+                                        <p><strong>1. Contact:</strong> Call our emergency hotline or send urgent email with "EMERGENCY" in subject</p>
+                                        <p><strong>2. Assessment:</strong> Immediate triage and impact evaluation within 30 minutes</p>
+                                        <p><strong>3. Response:</strong> Dedicated team mobilization and resolution implementation</p>
+                                        <p><strong>4. Communication:</strong> Regular updates every 30 minutes until resolution</p>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    Emergency support is available 24/7 for critical issues. Additional charges may apply for after-hours emergency response, but we prioritize getting your business back online quickly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions Section -->
+            <div class="text-center mt-16 p-8 bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl">
+                <h3 class="text-2xl font-bold text-text-primary mb-4">Still Have Questions?</h3>
+                <p class="text-text-secondary mb-6 max-w-2xl mx-auto">
+                    Can't find the answer you're looking for? Our team is here to help with personalized guidance and detailed information about your specific needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-primary">
+                        Contact Our Team
+                    </a>
+                    <a href="javascript:void(0)" class="btn-outline" onclick="scheduleConsultation()">
+                        Schedule Free Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container-max mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L16 2z"/>
+                            <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-bold">Digital Setter</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Precision meets innovation in digital transformation. We engineer digital futures that drive measurable business growth.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-primary transition-colors">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Web Development</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Graphics Design</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Video Editing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">IT Services</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 Digital Setter. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-primary text-sm transition-colors">Terms of Service</a>
+                    <a href="faq.html" class="text-gray-400 hover:text-primary text-sm transition-colors">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Search and Filter Functionality
+        const searchInput = document.getElementById('faq-search');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const faqItems = document.querySelectorAll('.faq-item');
+        const faqCategories = document.querySelectorAll('.faq-category');
+
+        // Search functionality
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            
+            faqItems.forEach(item => {
+                const keywords = item.getAttribute('data-keywords').toLowerCase();
+                const questionText = item.querySelector('.faq-question span').textContent.toLowerCase();
+                const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
+                
+                const isMatch = keywords.includes(searchTerm) || 
+                               questionText.includes(searchTerm) || 
+                               answerText.includes(searchTerm);
+                
+                item.style.display = isMatch ? 'block' : 'none';
+            });
+
+            // Show/hide categories based on visible items
+            faqCategories.forEach(category => {
+                const visibleItems = category.querySelectorAll('.faq-item[style="display: block"], .faq-item:not([style*="display: none"])');
+                category.style.display = visibleItems.length > 0 ? 'block' : 'none';
+            });
+        });
+
+        // Filter functionality
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Clear search
+                searchInput.value = '';
+                
+                // Show/hide categories and items
+                if (category === 'all') {
+                    faqCategories.forEach(cat => cat.style.display = 'block');
+                    faqItems.forEach(item => item.style.display = 'block');
+                } else {
+                    faqCategories.forEach(cat => {
+                        const catData = cat.getAttribute('data-category');
+                        cat.style.display = catData === category ? 'block' : 'none';
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle functionality
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            const isOpen = !answer.classList.contains('hidden');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(ans => {
+                if (ans !== answer) {
+                    ans.classList.add('hidden');
+                    ans.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Filter button styles
+        const style = document.createElement('style');
+        style.textContent = `
+            .filter-btn {
+                padding: 8px 16px;
+                border: 1px solid var(--color-border);
+                border-radius: 6px;
+                background: white;
+                color: var(--color-text-secondary);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            .filter-btn:hover {
+                border-color: var(--color-primary);
+                color: var(--color-primary);
+            }
+            .filter-btn.active {
+                background: var(--color-primary);
+                border-color: var(--color-primary);
+                color: white;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Schedule consultation function
+        function scheduleConsultation() {
+            // In a real application, this would open a calendar widget or redirect to a scheduling page
+            alert('Consultation scheduling feature would be integrated with a calendar system like Calendly or similar service.');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure all FAQ items are visible initially
+            faqItems.forEach(item => item.style.display = 'block');
+            faqCategories.forEach(category => category.style.display = 'block');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

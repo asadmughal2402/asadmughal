@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Services - Website Development, Design & Marketing | Digital Setter</title>
+    <meta name="description" content="Comprehensive digital services including website development, graphics design, digital marketing, video editing, office management tools, and IT services. Transform your business with Digital Setter." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdigitalse3389back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+        <nav class="container-max mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L16 2z"/>
+                            <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-bold text-primary">Digital Setter</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="services.html" class="text-primary font-semibold">Services</a>
+                    <a href="portfolio.html" class="text-text-secondary hover:text-primary transition-smooth">Portfolio</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-smooth">About</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-smooth">Contact</a>
+                    <a href="faq.html" class="text-text-secondary hover:text-primary transition-smooth">FAQ</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-border">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="services.html" class="block px-3 py-2 text-primary font-semibold">Services</a>
+                    <a href="portfolio.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Portfolio</a>
+                    <a href="about.html" class="block px-3 py-2 text-text-secondary hover:text-primary">About</a>
+                    <a href="contact.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                    <a href="faq.html" class="block px-3 py-2 text-text-secondary hover:text-primary">FAQ</a>
+                    <a href="contact.html" class="block mx-3 my-2 btn-primary text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <defs>
+                    <pattern id="services-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#services-grid)"/>
+            </svg>
+        </div>
+
+        <div class="container-max mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    <span class="text-gradient">Complete Digital Solutions</span><br />
+                    <span class="text-text-primary">Engineered for Your Success</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    From strategic website development to comprehensive digital marketing, we provide integrated solutions that transform businesses and deliver measurable results across every digital touchpoint.
+                </p>
+                
+                <!-- Service Quick Navigation -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12">
+                    <button onclick="scrollToService('web-development')" class="btn-outline text-sm px-4 py-2">Web Development</button>
+                    <button onclick="scrollToService('graphics-design')" class="btn-outline text-sm px-4 py-2">Graphics Design</button>
+                    <button onclick="scrollToService('digital-marketing')" class="btn-outline text-sm px-4 py-2">Digital Marketing</button>
+                    <button onclick="scrollToService('video-editing')" class="btn-outline text-sm px-4 py-2">Video Editing</button>
+                    <button onclick="scrollToService('office-tools')" class="btn-outline text-sm px-4 py-2">Office Tools</button>
+                    <button onclick="scrollToService('it-services')" class="btn-outline text-sm px-4 py-2">IT Services</button>
+                </div>
+
+                <!-- Service Stats -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">6</div>
+                        <div class="text-text-secondary">Core Services</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">150+</div>
+                        <div class="text-text-secondary">Service Combinations</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">24/7</div>
+                        <div class="text-text-secondary">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Comparison Matrix -->
+    <section class="section-padding bg-white">
+        <div class="container-max mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Service Tiers & Packages</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Choose the perfect service level for your business needs and budget
+                </p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-2xl shadow-elevated overflow-hidden">
+                    <thead class="bg-gradient-to-r from-primary to-secondary text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold">Service Category</th>
+                            <th class="px-6 py-4 text-center font-semibold">Starter</th>
+                            <th class="px-6 py-4 text-center font-semibold">Professional</th>
+                            <th class="px-6 py-4 text-center font-semibold">Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-border">
+                        <tr class="hover:bg-surface transition-colors">
+                            <td class="px-6 py-4 font-semibold text-primary">Website Development</td>
+                            <td class="px-6 py-4 text-center">$2,500+</td>
+                            <td class="px-6 py-4 text-center">$5,000+</td>
+                            <td class="px-6 py-4 text-center">$10,000+</td>
+                        </tr>
+                        <tr class="hover:bg-surface transition-colors">
+                            <td class="px-6 py-4 font-semibold text-accent">Graphics Design</td>
+                            <td class="px-6 py-4 text-center">$800+</td>
+                            <td class="px-6 py-4 text-center">$2,000+</td>
+                            <td class="px-6 py-4 text-center">$5,000+</td>
+                        </tr>
+                        <tr class="hover:bg-surface transition-colors">
+                            <td class="px-6 py-4 font-semibold text-secondary">Digital Marketing</td>
+                            <td class="px-6 py-4 text-center">$1,200/mo</td>
+                            <td class="px-6 py-4 text-center">$3,000/mo</td>
+                            <td class="px-6 py-4 text-center">$7,500/mo</td>
+                        </tr>
+                        <tr class="hover:bg-surface transition-colors">
+                            <td class="px-6 py-4 font-semibold text-success">Video Editing</td>
+                            <td class="px-6 py-4 text-center">$500+</td>
+                            <td class="px-6 py-4 text-center">$1,500+</td>
+                            <td class="px-6 py-4 text-center">$4,000+</td>
+                        </tr>
+                        <tr class="hover:bg-surface transition-colors">
+                            <td class="px-6 py-4 font-semibold text-warning">Office Management</td>
+                            <td class="px-6 py-4 text-center">$1,800+</td>
+                            <td class="px-6 py-4 text-center">$4,500+</td>
+                            <td class="px-6 py-4 text-center">$12,000+</td>
+                        </tr>
+                        <tr class="hover:bg-surface transition-colors">
+                            <td class="px-6 py-4 font-semibold text-error">IT Services</td>
+                            <td class="px-6 py-4 text-center">$150/hr</td>
+                            <td class="px-6 py-4 text-center">$200/hr</td>
+                            <td class="px-6 py-4 text-center">$300/hr</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Development Service -->
+    <section id="web-development" class="section-padding bg-surface">
+        <div class="container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mr-6">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Website Development</h2>
+                            <p class="text-text-secondary">Custom web solutions that drive results</p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        We don't just build websites—we engineer digital experiences that convert visitors into customers. Our development process combines cutting-edge technology with strategic user experience design to create websites that perform as hard as they look good.
+                    </p>
+
+                    <!-- Process Timeline -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold mr-4 mt-1">1</div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Discovery & Strategy</h4>
+                                <p class="text-text-secondary text-sm">Business analysis, competitor research, and technical requirements gathering</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold mr-4 mt-1">2</div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Design & Prototyping</h4>
+                                <p class="text-text-secondary text-sm">Wireframes, mockups, and interactive prototypes for validation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold mr-4 mt-1">3</div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Development & Testing</h4>
+                                <p class="text-text-secondary text-sm">Clean code, responsive design, and comprehensive quality assurance</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold mr-4 mt-1">4</div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Launch & Optimization</h4>
+                                <p class="text-text-secondary text-sm">Deployment, performance monitoring, and continuous improvements</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Complexity Calculator -->
+                    <div class="bg-white rounded-lg p-6 shadow-professional">
+                        <h4 class="font-semibold mb-4">Project Complexity Calculator</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Number of Pages</label>
+                                <select class="input-field" id="page-count" onchange="calculateWebCost()">
+                                    <option value="5">1-5 pages</option>
+                                    <option value="15">6-15 pages</option>
+                                    <option value="30">16-30 pages</option>
+                                    <option value="50">30+ pages</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Features Required</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" value="500" onchange="calculateWebCost()" /> E-commerce (+$500)
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" value="800" onchange="calculateWebCost()" /> Custom CMS (+$800)
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2" value="300" onchange="calculateWebCost()" /> API Integration (+$300)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-border">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-semibold">Estimated Cost:</span>
+                                    <span class="text-2xl font-bold text-primary" id="web-cost">$2,500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Website development process" class="w-full h-96 object-cover rounded-2xl shadow-elevated" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+                    
+                    <!-- Case Study Preview -->
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="bg-white/95 backdrop-blur-sm rounded-lg p-4">
+                            <h4 class="font-semibold mb-2">Recent Success: TechFlow Solutions</h4>
+                            <p class="text-sm text-text-secondary mb-2">340% increase in online conversions within 6 months</p>
+                            <a href="portfolio.html" class="text-primary text-sm font-semibold hover:underline">View Case Study →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphics Design Service -->
+    <section id="graphics-design" class="section-padding bg-white">
+        <div class="container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <!-- Before/After Slider -->
+                    <div class="relative bg-surface rounded-2xl p-8 shadow-elevated">
+                        <h4 class="font-semibold mb-6 text-center">Before & After Transformation</h4>
+                        <div class="relative overflow-hidden rounded-lg" id="before-after-container">
+                            <div class="flex transition-transform duration-300" id="slider-content">
+                                <div class="w-full flex-shrink-0">
+                                    <img src="https://images.pixabay.com/photos/2016/12/30/10/03/web-design-1940169_960_720.jpg" alt="Before design" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <div class="text-center mt-2">
+                                        <span class="text-sm font-semibold text-error">Before</span>
+                                    </div>
+                                </div>
+                                <div class="w-full flex-shrink-0">
+                                    <img src="https://images.pixabay.com/photos/2020/05/18/16/17/social-media-5187243_960_720.png" alt="After design" class="w-full h-48 object-cover" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                    <div class="text-center mt-2">
+                                        <span class="text-sm font-semibold text-success">After</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-4 space-x-2">
+                            <button onclick="showSlide(0)" class="w-3 h-3 rounded-full bg-primary slider-dot active"></button>
+                            <button onclick="showSlide(1)" class="w-3 h-3 rounded-full bg-gray-300 slider-dot"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mr-6">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Graphics Design</h2>
+                            <p class="text-text-secondary">Visual storytelling that converts</p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        Our design philosophy centers on strategic visual communication that doesn't just look beautiful—it drives business results. Every design element serves a purpose in your customer's journey from awareness to conversion.
+                    </p>
+
+                    <!-- Design Services Grid -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-surface rounded-lg p-4 text-center">
+                            <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <h4 class="font-semibold text-sm">Brand Identity</h4>
+                        </div>
+                        <div class="bg-surface rounded-lg p-4 text-center">
+                            <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15"/>
+                            </svg>
+                            <h4 class="font-semibold text-sm">Print Design</h4>
+                        </div>
+                        <div class="bg-surface rounded-lg p-4 text-center">
+                            <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <h4 class="font-semibold text-sm">Digital Assets</h4>
+                        </div>
+                        <div class="bg-surface rounded-lg p-4 text-center">
+                            <svg class="w-8 h-8 text-accent mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <h4 class="font-semibold text-sm">Illustrations</h4>
+                        </div>
+                    </div>
+
+                    <!-- Client Testimonial -->
+                    <div class="bg-accent-50 rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=48&h=48&fit=crop&crop=face&auto=format" alt="Client testimonial" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold">Sarah Chen</div>
+                                <div class="text-sm text-text-secondary">Marketing Director</div>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary italic">"Their rebrand increased our brand recognition by 180% and directly contributed to a 45% boost in sales inquiries."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing Service -->
+    <section id="digital-marketing" class="section-padding bg-surface">
+        <div class="container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mr-6">
+                            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Digital Marketing</h2>
+                            <p class="text-text-secondary">Data-driven growth strategies</p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        We don't just run campaigns—we engineer growth systems. Our integrated approach combines SEO, PPC, social media, and content marketing to create sustainable customer acquisition engines that scale with your business.
+                    </p>
+
+                    <!-- ROI Projections Calculator -->
+                    <div class="bg-white rounded-lg p-6 shadow-professional mb-8">
+                        <h4 class="font-semibold mb-4">ROI Projection Calculator</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Monthly Marketing Budget</label>
+                                <select class="input-field" id="marketing-budget" onchange="calculateROI()">
+                                    <option value="1200">$1,200 - $2,999</option>
+                                    <option value="3000">$3,000 - $4,999</option>
+                                    <option value="5000">$5,000 - $7,499</option>
+                                    <option value="7500">$7,500+</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Industry Type</label>
+                                <select class="input-field" id="industry-type" onchange="calculateROI()">
+                                    <option value="2.5">E-commerce (2.5x avg ROI)</option>
+                                    <option value="3.2">B2B Services (3.2x avg ROI)</option>
+                                    <option value="2.8">Healthcare (2.8x avg ROI)</option>
+                                    <option value="3.5">Technology (3.5x avg ROI)</option>
+                                </select>
+                            </div>
+                            <div class="pt-4 border-t border-border">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-secondary" id="projected-roi">$3,000</div>
+                                        <div class="text-sm text-text-secondary">Monthly Return</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-success" id="roi-percentage">250%</div>
+                                        <div class="text-sm text-text-secondary">ROI Percentage</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Channels -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-secondary mb-1">85%</div>
+                            <div class="text-sm text-text-secondary">SEO Success Rate</div>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-secondary mb-1">340%</div>
+                            <div class="text-sm text-text-secondary">Avg. Conversion Boost</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Marketing Performance Chart -->
+                    <div class="bg-white rounded-2xl p-8 shadow-elevated">
+                        <h4 class="font-semibold mb-6">Campaign Performance Overview</h4>
+                        <div class="space-y-6">
+                            <!-- SEO Progress -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-medium">SEO Rankings</span>
+                                    <span class="text-sm text-success">+185%</span>
+                                </div>
+                                <div class="w-full bg-surface rounded-full h-3">
+                                    <div class="bg-gradient-to-r from-secondary to-primary h-3 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- PPC Performance -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-medium">PPC Conversions</span>
+                                    <span class="text-sm text-success">+240%</span>
+                                </div>
+                                <div class="w-full bg-surface rounded-full h-3">
+                                    <div class="bg-gradient-to-r from-accent to-secondary h-3 rounded-full" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Social Media -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-medium">Social Engagement</span>
+                                    <span class="text-sm text-success">+320%</span>
+                                </div>
+                                <div class="w-full bg-surface rounded-full h-3">
+                                    <div class="bg-gradient-to-r from-primary to-accent h-3 rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Content Marketing -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-medium">Content Reach</span>
+                                    <span class="text-sm text-success">+150%</span>
+                                </div>
+                                <div class="w-full bg-surface rounded-full h-3">
+                                    <div class="bg-gradient-to-r from-secondary to-accent h-3 rounded-full" style="width: 68%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t border-border">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-primary mb-1">285%</div>
+                                <div class="text-sm text-text-secondary">Average ROI Delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Editing Service -->
+    <section id="video-editing" class="section-padding bg-white">
+        <div class="container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="relative bg-gray-900 rounded-2xl overflow-hidden shadow-elevated">
+                        <!-- Video Preview -->
+                        <div class="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-16 h-16 mx-auto mb-4 opacity-60" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <p class="text-sm opacity-80">Professional Video Showcase</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Video Stats Overlay -->
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-black/70 backdrop-blur-sm rounded-lg p-4 text-white">
+                                <div class="grid grid-cols-3 gap-4 text-center">
+                                    <div>
+                                        <div class="text-lg font-bold">4K</div>
+                                        <div class="text-xs opacity-80">Resolution</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold">60fps</div>
+                                        <div class="text-xs opacity-80">Frame Rate</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold">HDR</div>
+                                        <div class="text-xs opacity-80">Color Grade</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-success-100 rounded-2xl flex items-center justify-center mr-6">
+                            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Video Editing</h2>
+                            <p class="text-text-secondary">Cinematic storytelling for business</p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        Transform raw footage into compelling narratives that engage audiences and drive action. Our video editing combines technical excellence with strategic storytelling to create content that performs across all platforms.
+                    </p>
+
+                    <!-- Video Services -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center p-4 bg-surface rounded-lg">
+                            <svg class="w-6 h-6 text-success mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold">Corporate Videos</h4>
+                                <p class="text-sm text-text-secondary">Professional company presentations and training materials</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-surface rounded-lg">
+                            <svg class="w-6 h-6 text-success mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold">Marketing Content</h4>
+                                <p class="text-sm text-text-secondary">Social media videos, ads, and promotional content</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-surface rounded-lg">
+                            <svg class="w-6 h-6 text-success mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold">Motion Graphics</h4>
+                                <p class="text-sm text-text-secondary">Animated logos, explainer videos, and visual effects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Metrics -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-success-50 rounded-lg">
+                            <div class="text-2xl font-bold text-success mb-1">89%</div>
+                            <div class="text-sm text-text-secondary">Engagement Increase</div>
+                        </div>
+                        <div class="text-center p-4 bg-success-50 rounded-lg">
+                            <div class="text-2xl font-bold text-success mb-1">72h</div>
+                            <div class="text-sm text-text-secondary">Avg. Turnaround</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Management Tools Service -->
+    <section id="office-tools" class="section-padding bg-surface">
+        <div class="container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-warning-100 rounded-2xl flex items-center justify-center mr-6">
+                            <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Office Management Tools</h2>
+                            <p class="text-text-secondary">Streamline operations, boost productivity</p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        Custom business automation solutions that eliminate manual processes and integrate seamlessly with your existing workflows. Our tools are designed to scale with your business and adapt to your unique operational needs.
+                    </p>
+
+                    <!-- Integration Examples -->
+                    <div class="space-y-6 mb-8">
+                        <div class="bg-white rounded-lg p-6 shadow-professional">
+                            <h4 class="font-semibold mb-4">Popular Integrations</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-primary-100 rounded mr-3 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm">CRM Systems</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-accent-100 rounded mr-3 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm">Accounting</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-secondary-100 rounded mr-3 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm">Email Marketing</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-success-100 rounded mr-3 flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm">Project Management</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Productivity Metrics -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="text-2xl font-bold text-warning mb-1">65%</div>
+                                <div class="text-sm text-text-secondary">Time Savings</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="text-2xl font-bold text-warning mb-1">40%</div>
+                                <div class="text-sm text-text-secondary">Cost Reduction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Dashboard Preview -->
+                    <div class="bg-white rounded-2xl p-6 shadow-elevated">
+                        <div class="flex items-center justify-between mb-6">
+                            <h4 class="font-semibold">Management Dashboard</h4>
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mock Dashboard Content -->
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-surface rounded-lg p-3 text-center">
+                                    <div class="text-lg font-bold text-primary">247</div>
+                                    <div class="text-xs text-text-secondary">Active Tasks</div>
+                                </div>
+                                <div class="bg-surface rounded-lg p-3 text-center">
+                                    <div class="text-lg font-bold text-success">89%</div>
+                                    <div class="text-xs text-text-secondary">Completion Rate</div>
+                                </div>
+                                <div class="bg-surface rounded-lg p-3 text-center">
+                                    <div class="text-lg font-bold text-warning">23</div>
+                                    <div class="text-xs text-text-secondary">Team Members</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Progress Bars -->
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Project Alpha</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="w-full bg-surface rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Client Onboarding</span>
+                                        <span>92%</span>
+                                    </div>
+                                    <div class="w-full bg-surface rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Marketing Campaign</span>
+                                        <span>67%</span>
+                                    </div>
+                                    <div class="w-full bg-surface rounded-full h-2">
+                                        <div class="bg-warning h-2 rounded-full" style="width: 67%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT Services -->
+    <section id="it-services" class="section-padding bg-white">
+        <div class="container-max mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-gray-900 rounded-2xl p-8 text-white shadow-elevated">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-error-500 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">System Security Status</h4>
+                                <p class="text-sm text-gray-300">All systems operational</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Security Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-800 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-success mb-1">99.9%</div>
+                                <div class="text-xs text-gray-300">Uptime</div>
+                            </div>
+                            <div class="bg-gray-800 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-primary mb-1">24/7</div>
+                                <div class="text-xs text-gray-300">Monitoring</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Status -->
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Network Security</span>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-success rounded-full mr-2"></div>
+                                    <span class="text-xs text-gray-300">Active</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Data Backup</span>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-success rounded-full mr-2"></div>
+                                    <span class="text-xs text-gray-300">Synced</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm">Cloud Migration</span>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                                    <span class="text-xs text-gray-300">In Progress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-error-100 rounded-2xl flex items-center justify-center mr-6">
+                            <svg class="w-8 h-8 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">IT Services</h2>
+                            <p class="text-text-secondary">Comprehensive technical support</p>
+                        </div>
+                    </div>
+
+                    <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                        From infrastructure management to cybersecurity, we provide comprehensive IT solutions that keep your business running smoothly. Our proactive approach prevents issues before they impact your operations.
+                    </p>
+
+                    <!-- IT Services List -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start p-4 bg-surface rounded-lg">
+                            <svg class="w-6 h-6 text-error mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold mb-1">Cybersecurity Solutions</h4>
+                                <p class="text-sm text-text-secondary">Advanced threat protection, security audits, and compliance management</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-4 bg-surface rounded-lg">
+                            <svg class="w-6 h-6 text-error mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold mb-1">Cloud Migration & Management</h4>
+                                <p class="text-sm text-text-secondary">Seamless cloud transitions with ongoing optimization and support</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start p-4 bg-surface rounded-lg">
+                            <svg class="w-6 h-6 text-error mr-4 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold mb-1">System Administration</h4>
+                                <p class="text-sm text-text-secondary">Proactive monitoring, maintenance, and performance optimization</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Response Time Guarantee -->
+                    <div class="bg-error-50 rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-8 h-8 text-error mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold">2.4 Hour Response Guarantee</h4>
+                                <p class="text-sm text-text-secondary">Critical issues resolved within our SLA commitment</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-error mb-1">99.9%</div>
+                                <div class="text-sm text-text-secondary">Uptime Record</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-error mb-1">15min</div>
+                                <div class="text-sm text-text-secondary">Avg Response</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross-Service Integration Examples -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container-max mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Integrated Service Solutions</h2>
+                <p class="text-lg text-primary-100 max-w-3xl mx-auto">
+                    Our services work better together. See how combining our expertise creates exponential value for your business.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Integration Example 1 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Web + Marketing</h3>
+                    </div>
+                    <p class="text-primary-100 mb-4">
+                        Custom websites optimized for conversion combined with targeted digital marketing campaigns for maximum ROI.
+                    </p>
+                    <div class="text-sm text-primary-200">
+                        Average result: 340% increase in qualified leads
+                    </div>
+                </div>
+
+                <!-- Integration Example 2 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Design + Video</h3>
+                    </div>
+                    <p class="text-primary-100 mb-4">
+                        Cohesive brand identity across all visual touchpoints, from static graphics to dynamic video content.
+                    </p>
+                    <div class="text-sm text-primary-200">
+                        Average result: 180% brand recognition increase
+                    </div>
+                </div>
+
+                <!-- Integration Example 3 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Office + IT</h3>
+                    </div>
+                    <p class="text-primary-100 mb-4">
+                        Custom management tools integrated with robust IT infrastructure for seamless business operations.
+                    </p>
+                    <div class="text-sm text-primary-200">
+                        Average result: 65% operational efficiency gain
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Discuss Your Integrated Solution
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service-Specific Testimonials -->
+    <section class="section-padding bg-white">
+        <div class="container-max mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Client Success Stories by Service</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Real results from real clients across all our service categories
+                </p>
+            </div>
+
+            <!-- Service Testimonials Carousel -->
+            <div class="max-w-4xl mx-auto">
+                <div class="service-testimonials">
+                    <!-- Web Development Testimonial -->
+                    <div class="testimonial-card active bg-surface rounded-2xl p-8 shadow-elevated">
+                        <div class="flex items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face&auto=format" alt="Client testimonial" class="w-16 h-16 rounded-full object-cover mr-4" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold text-lg">Michael Rodriguez</div>
+                                <div class="text-text-secondary">CEO, TechFlow Solutions</div>
+                                <div class="text-sm text-primary font-semibold">Website Development</div>
+                            </div>
+                        </div>
+                        <blockquote class="text-lg text-text-primary leading-relaxed mb-4">
+                            "Our new website isn't just beautiful—it's a conversion machine. Digital Setter's development team created a platform that increased our online conversions by 340% within six months."
+                        </blockquote>
+                        <div class="flex text-warning">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Navigation Tabs -->
+                <div class="flex flex-wrap justify-center mt-8 gap-2">
+                    <button class="service-tab active px-4 py-2 rounded-lg bg-primary text-white text-sm font-semibold" data-service="web">Web Dev</button>
+                    <button class="service-tab px-4 py-2 rounded-lg bg-surface text-text-secondary text-sm font-semibold hover:bg-primary hover:text-white transition-all" data-service="design">Design</button>
+                    <button class="service-tab px-4 py-2 rounded-lg bg-surface text-text-secondary text-sm font-semibold hover:bg-primary hover:text-white transition-all" data-service="marketing">Marketing</button>
+                    <button class="service-tab px-4 py-2 rounded-lg bg-surface text-text-secondary text-sm font-semibold hover:bg-primary hover:text-white transition-all" data-service="video">Video</button>
+                    <button class="service-tab px-4 py-2 rounded-lg bg-surface text-text-secondary text-sm font-semibold hover:bg-primary hover:text-white transition-all" data-service="office">Office</button>
+                    <button class="service-tab px-4 py-2 rounded-lg bg-surface text-text-secondary text-sm font-semibold hover:bg-primary hover:text-white transition-all" data-service="it">IT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container-max mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
+                Choose individual services or combine them for maximum impact. Our team is ready to engineer your digital success.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Get Custom Quote
+                </a>
+                <a href="portfolio.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container-max mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7L16 2z"/>
+                            <path d="M14 16l-2-2-1.41 1.41L14 18.83l6-6L18.59 11.41 14 16z" fill="white"/>
+                        </svg>
+                        <span class="text-xl font-bold">Digital Setter</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Precision meets innovation in digital transformation. We engineer digital futures that drive measurable business growth.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-primary transition-colors">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Web Development</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Graphics Design</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Video Editing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">IT Services</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 Digital Setter. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-gray-400 hover:text-primary text-sm transition-colors">Terms of Service</a>
+                    <a href="faq.html" class="text-gray-400 hover:text-primary text-sm transition-colors">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll to service sections
+        function scrollToService(serviceId) {
+            const element = document.getElementById(serviceId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Website Development Cost Calculator
+        function calculateWebCost() {
+            const pageCount = parseInt(document.getElementById('page-count').value);
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            
+            let baseCost = pageCount * 100;
+            let additionalCost = 0;
+            
+            checkboxes.forEach(checkbox => {
+                additionalCost += parseInt(checkbox.value);
+            });
+            
+            const totalCost = baseCost + additionalCost;
+            document.getElementById('web-cost').textContent = '$' + totalCost.toLocaleString();
+        }
+
+        // Digital Marketing ROI Calculator
+        function calculateROI() {
+            const budget = parseInt(document.getElementById('marketing-budget').value);
+            const multiplier = parseFloat(document.getElementById('industry-type').value);
+            
+            const monthlyReturn = Math.round(budget * multiplier);
+            const roiPercentage = Math.round(((monthlyReturn - budget) / budget) * 100);
+            
+            document.getElementById('projected-roi').textContent = '$' + monthlyReturn.toLocaleString();
+            document.getElementById('roi-percentage').textContent = roiPercentage + '%';
+        }
+
+        // Before/After Slider
+        let currentSlideIndex = 0;
+        function showSlide(index) {
+            const sliderContent = document.getElementById('slider-content');
+            const dots = document.querySelectorAll('.slider-dot');
+            
+            currentSlideIndex = index;
+            sliderContent.style.transform = `translateX(-${index * 100}%)`;
+            
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('bg-primary', i === index);
+                dot.classList.toggle('bg-gray-300', i !== index);
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Auto-advance slider
+        setInterval(() => {
+            currentSlideIndex = (currentSlideIndex + 1) % 2;
+            showSlide(currentSlideIndex);
+        }, 4000);
+
+        // Service testimonials (mock data for different services)
+        const serviceTestimonials = {
+            web: {
+                name: "Michael Rodriguez",
+                title: "CEO, TechFlow Solutions",
+                service: "Website Development",
+                quote: "Our new website isn't just beautiful—it's a conversion machine. Digital Setter's development team created a platform that increased our online conversions by 340% within six months.",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face&auto=format"
+            },
+            design: {
+                name: "Sarah Chen",
+                title: "Marketing Director, GrowthLab",
+                service: "Graphics Design",
+                quote: "Their rebrand transformed our entire market presence. The new visual identity increased our brand recognition by 180% and directly contributed to a 45% boost in sales inquiries.",
+                image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=64&h=64&fit=crop&crop=face&auto=format"
+            },
+            marketing: {
+                name: "David Thompson",
+                title: "Founder, InnovateCorp",
+                service: "Digital Marketing",
+                quote: "Digital Setter's marketing strategy delivered a 285% ROI in our first year. Their data-driven approach and continuous optimization kept us ahead of the competition.",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face&auto=format"
+            },
+            video: {
+                name: "Lisa Park",
+                title: "Creative Director, MediaFlow",
+                service: "Video Editing",
+                quote: "Our video content engagement increased by 89% after partnering with Digital Setter. Their editing team understands how to tell stories that convert viewers into customers.",
+                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face&auto=format"
+            },
+            office: {
+                name: "James Wilson",
+                title: "Operations Manager, StreamlineInc",
+                service: "Office Management Tools",
+                quote: "The custom management system reduced our operational overhead by 40% and improved team productivity by 65%. It's like having a digital operations manager.",
+                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop&crop=face&auto=format"
+            },
+            it: {
+                name: "Maria Garcia",
+                title: "CTO, SecureData Solutions",
+                service: "IT Services",
+                quote: "Digital Setter's IT support maintains our 99.9% uptime record. Their proactive monitoring and 15-minute response time keeps our business running smoothly 24/7.",
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop&crop=face&auto=format"
+            }
+        };
+
+        // Service testimonial tabs
+        document.querySelectorAll('.service-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const service = this.dataset.service;
+                const testimonial = serviceTestimonials[service];
+                
+                // Update active tab
+                document.querySelectorAll('.service-tab').forEach(t => {
+                    t.classList.remove('active', 'bg-primary', 'text-white');
+                    t.classList.add('bg-surface', 'text-text-secondary');
+                });
+                this.classList.add('active', 'bg-primary', 'text-white');
+                this.classList.remove('bg-surface', 'text-text-secondary');
+                
+                // Update testimonial content
+                const card = document.querySelector('.testimonial-card');
+                card.innerHTML = `
+                    <div class="flex items-center mb-6">
+                        <img src="${testimonial.image}" 
+                             alt="Client testimonial" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <div class="font-semibold text-lg">${testimonial.name}</div>
+                            <div class="text-text-secondary">${testimonial.title}</div>
+                            <div class="text-sm text-primary font-semibold">${testimonial.service}</div>
+                        </div>
+                    </div>
+                    <blockquote class="text-lg text-text-primary leading-relaxed mb-4">
+                        "${testimonial.quote}"
+                    </blockquote>
+                    <div class="flex text-warning">
+                        ${'<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>'.repeat(5)}
+                    </div>
+                `;
+            });
+        });
+
+        // Initialize calculators with default values
+        window.addEventListener('load', function() {
+            calculateWebCost();
+            calculateROI();
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
